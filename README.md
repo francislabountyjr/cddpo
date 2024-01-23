@@ -1,3 +1,8 @@
+# Experimental
+This repo is for implementing [CPO (Contrastive Policy Optimization)](https://arxiv.org/pdf/2401.08417.pdf) for diffusion models (CDDPO)
+
+---
+# Original README
 # Direct Preference for Denoising Diffusion Policy Optimization (D3PO)
 The official code for the paper [Using Human Feedback to Fine-tune Diffusion Models without Any Reward Model](https://arxiv.org/pdf/2311.13231.pdf). D3PO can directly fine-tune the diffusion model through human feedback without the need to train a reward model. Our repository's code is referenced from [DDPO](https://github.com/kvablack/ddpo-pytorch).
 
