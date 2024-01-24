@@ -5,6 +5,10 @@ def get_config():
     config = ml_collections.ConfigDict()
 
     ###### General ######
+    # whether or not to use Contrastive Denoising Diffusion Policy Optimization (CDDPO)
+    config.use_cddpo = True
+    # CDDPO beta
+    config.beta = 0.1
     # run name for wandb logging and checkpoint saving -- if not provided, will be auto-generated based on the datetime.
     config.run_name = ""
     # random seed for reproducibility.
@@ -83,7 +87,7 @@ def get_config():
     # number of inner epochs per outer epoch. each inner epoch is one iteration through the data collected during one
     # outer epoch's round of sampling.
     train.num_inner_epochs = 1
-    # enable activation checkpointing or not. 
+    # enable activation checkpointing or not.
     # this reduces memory usage at the cost of some additional compute.
     train.activation_checkpoint = True
     # whether or not to use classifier-free guidance during training. if enabled, the same guidance scale used during
@@ -113,6 +117,5 @@ def get_config():
     ###### Reward Function ######
     # reward function to use. see `rewards.py` for available reward functions.
     config.reward_fn = "jpeg_compressibility"
-
 
     return config
