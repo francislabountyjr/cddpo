@@ -1,5 +1,5 @@
 # Experimental
-This repo is for implementing [CPO (Contrastive Policy Optimization)](https://arxiv.org/pdf/2401.08417.pdf) for denoising diffusion policy optimization (CDDPO)
+This repo is for implementing [CPO (Contrastive Preference Optimization)](https://arxiv.org/pdf/2401.08417.pdf) for denoising diffusion policy optimization (CDDPO)
 
 ---
 # Original README
